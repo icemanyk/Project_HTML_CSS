@@ -1,0 +1,289 @@
+<!-- Kai Yang 8922593 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inner Page - Fan Site</title>
+    <link rel="stylesheet" href="./css/inner.css" />
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="./index.html"><img src="./images/Logo.png" alt="Logo" /></a>
+        </div>
+        <div class="tagline">
+          <h1>
+            <strong
+              >Barça Fan Site - Kai Yang - Kyang2593@conestogac.on.ca</strong
+            >
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li>
+          <a href="./inner.html">Honours</a>
+          <ul>
+            <li><a href="./inner.html#video">Video</a></li>
+            <li><a href="./inner.html#table">Table</a></li>
+            <li><a href="./inner.html#form">Form</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./updated.html">Updated News</a>
+          <ul>
+            <li><a href="./updated.html">Club</a></li>
+            <li><a href="./updated.html">Players</a></li>
+            <li><a href="./updated.html">Match</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./barcaShop.html">Barça Shop</a>
+          <ul>
+            <li><a href="./barcaShop.html">New Kit</a></li>
+            <li><a href="./barcaShop.html">Collection</a></li>
+            <li><a href="./barcaShop.html">Training</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <div class="main">
+        <section class="hero">
+          <img src="./images/Camp Nou.jpg" alt="Camp Nou" />
+          <h2>Más que un club !</h2>
+        </section>
+
+        <section class="content">
+          <div class="text">
+            <h2>What is Más que un club ?</h2>
+            <br />
+
+            <p>
+              FC Barcelona, commonly known as Barça, is more than just a
+              football club. Nestled in the heart of Catalonia's capital,
+              Barcelona, this club represents a unique culture, identity, and
+              history. Globally, Barça is renowned not only for its distinctive
+              style of play and rich heritage but also for its embodiment of
+              Catalan pride and resilience.
+            </p>
+            <br />
+            <p>
+              The club's motto, "Més que un club" (More than a club), reflects
+              its profound influence beyond the football pitch. Barça has been a
+              symbol of Catalan identity, particularly during periods of
+              political turmoil and repression. Its commitment to promoting
+              Catalan language, traditions, and values underscores its role as a
+              cultural institution.
+            </p>
+          </div>
+          <div class="video">
+            <video controls muted loop poster="./images/1992.jpg">
+              <source src="./media/MessiGoal.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </section>
+
+        <section id="table" class="content-section">
+          <h2>Spanish La Liga statistics below with some data:</h2>
+          <table>
+            <tr>
+              <th>Year</th>
+              <th>Match Played</th>
+              <th>Win</th>
+              <th>Draw</th>
+              <th>Lose</th>
+              <th>Points</th>
+            </tr>
+
+            <tr>
+              <td>2023/24</td>
+              <td>38</td>
+              <td>26</td>
+              <td>7</td>
+              <td>5</td>
+              <td>85</td>
+            </tr>
+
+            <tr>
+              <td>2022/23</td>
+              <td>38</td>
+              <td>28</td>
+              <td>4</td>
+              <td>6</td>
+              <td>88</td>
+            </tr>
+
+            <tr>
+              <td>2021/22</td>
+              <td>38</td>
+              <td>21</td>
+              <td>10</td>
+              <td>7</td>
+              <td>73</td>
+            </tr>
+          </table>
+          <p>
+            Data source:
+            <a href="https://www.skysports.com/la-liga-table/2023"
+              >la-liga-2023/24</a
+            >
+            &nbsp;
+            <a href="https://www.skysports.com/la-liga-table/2022"
+              >la-liga-2022/23</a
+            >
+            &nbsp;
+            <a href="https://www.skysports.com/la-liga-table/2021"
+              >la-liga-2021/22</a
+            >
+          </p>
+        </section>
+
+        <form action="">
+          <fieldset id="form" class="content-section">
+            <legend>Fill Your Information:</legend>
+            <p>Please fill the form below:</p>
+
+            <div class="field">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" />
+            </div>
+
+            <div class="field">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="field">
+              <label for="occupation">Occupation:</label>
+              <select id="occupation" name="occupation">
+                <optgroup label="Student">
+                  <option value="highBelow">High School and below</option>
+                  <option value="bachelor">Bachelor</option>
+                  <option value="masterAbove">Master and above</option>
+                </optgroup>
+                <optgroup label="Non-students">
+                  <option value="government">Government Employee</option>
+                  <option value="private">Private Company Employee</option>
+                  <option value="freelancer">Freelancer</option>
+                  <option value="others">Others</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="textarea">Your Message:</label>
+              <textarea id="textarea" name="textarea"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Choose Your Favorite Player:</legend>
+            <p>Which Barcelona football player do you like most ?</p>
+            <div class="player">
+              <input type="radio" id="Messi" name="favoritePlayer" />
+              <label for="Messi">Lionel Messi</label><br />
+            </div>
+
+            <div class="player">
+              <input type="radio" id="Cruyff" name="favoritePlayer" />
+              <label for="Cruyff">Johan Cruyff</label><br />
+            </div>
+
+            <div class="player">
+              <input type="radio" id="Guardiola" name="favoritePlayer" />
+              <label for="Guardiola">Josep Guardiola</label><br />
+            </div class="player">
+
+            <div class="player">
+              <input type="radio" id="Ronaldinho" name="favoritePlayer" />
+              <label for="Ronaldinho">Ronaldinho</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>How do you follow us?</legend>
+            <div class="follow">
+              <input type="checkbox" id="twitter" name="twitter"/>
+              <label for="twitter">Twitter</label><br />
+            </div>
+            
+            <div class="follow">
+              <input type="checkbox" id="instagram" name="instagram"/>
+              <label for="instagram">Instagram</label>
+            </div>
+           
+            <div class="follow">
+              <input type="checkbox" id="mata" name="mata"/>
+              <label for="mata">Mata</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Reset and Submit</legend>
+            <div class="submit">
+              <div>
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">I Agree to Terms and Conditions</label>
+              </div>
+              <button type="reset">Reset</button>
+              <button type="submit">Submit</button>
+            </div>
+            
+          </fieldset>
+          
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-menu">
+        <div>
+          <h4>Argentina FC</h4>
+          <ul>
+            <li><a href="https://www.argentinafc.org/">Link 1</a></li>
+            <li><a href="https://www.argentinafc.org/">Link 2</a></li>
+            <li><a href="https://www.argentinafc.org/">Link 3</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Manchester City F.C.</h4>
+          <ul>
+            <li><a href="https://www.mancity.com/">Link 1</a></li>
+            <li><a href="https://www.mancity.com/">Link 2</a></li>
+            <li><a href="https://www.mancity.com/">Link 3</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Inter Miami CF</h4>
+          <ul>
+            <li><a href="https://www.intermiamicf.com/">Link 1</a></li>
+            <li><a href="https://www.intermiamicf.com/">Link 2</a></li>
+            <li><a href="https://www.intermiamicf.com/">Link 3</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="copyright">
+        <p>
+          &copy; 2024 Kai Yang. All rights reserved. Kyang2593@conestogac.on.ca
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

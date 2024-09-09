@@ -1,0 +1,267 @@
+/* Kai Yang 8922593 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
+  line-height: 1.6;
+  width: 95%;
+  margin: auto;
+  background-color: #a3c2c2;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  font-family: Courier, monospace;
+  background-color: #004d98;
+  color: #ffd700;
+  padding: 15px 0;
+  font-size: 12px;
+}
+
+header .logo img {
+  width: 100px;
+}
+
+header .tagline {
+  margin-top: 40px;
+  flex: 1;
+  text-align: right;
+}
+
+nav {
+  background-color: #a50044;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  display: block;
+  position: relative;
+}
+
+nav ul li a {
+  font-family: Courier, monospace;
+  font-weight: bold;
+  color: #ffd700;
+  padding: 15px 25px;
+  display: block;
+  text-decoration: none;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #a50044;
+  top: 100%;
+  left: 0;
+  list-style: none;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+main {
+  font-family: sans-serif, monospace;
+}
+
+.left-aligned {
+  width: 100%;
+  text-align: left;
+}
+
+.topic {
+  width: 100%;
+  text-align: center;
+}
+
+.team {
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.team img {
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.content-section {
+  display: flex;
+  margin: 15px 0;
+}
+
+h3 {
+  margin: 25px 0 0 0;
+}
+
+.text > p {
+  padding: 2px;
+}
+
+.content-section .text,
+.content-section .image {
+  flex: 1;
+  margin: 0 16px;
+}
+
+/* Clip-path styles */
+.clip-pentagon {
+  background-image: url(../images/la-liga1.png);
+  background-size: cover;
+  background-color: #ffa50044;
+  background-position: center;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 13%, 75% 100%, 25% 100%, 0 13%);
+  animation: clipPentagonAnimation 4s forwards;
+}
+
+.clip-trapezoid {
+  background-image: url(../images/Champions\ League.png);
+  background-size: cover;
+  background-color: #ffa50044;
+  background-position: center;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  animation: clipTrapezoidAnimation 4s forwards;
+}
+
+/* Pentagon clip-path animation */
+@keyframes clipPentagonAnimation {
+  0% {
+    clip-path: polygon(25% 0%, 25% 0%, 25% 0%, 25% 0%, 25% 0%, 25% 0%);
+  }
+  20% {
+    clip-path: polygon(25% 0%, 75% 0%, 25% 0%, 25% 0%, 25% 0%, 25% 0%);
+  }
+  40% {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 13%, 25% 0%, 25% 0%, 25% 0%);
+  }
+  60% {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 13%, 75% 100%, 25% 0%, 25% 0%);
+  }
+  80% {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 13%, 75% 100%, 25% 100%, 25% 0%);
+  }
+  100% {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 17%, 75% 100%, 25% 100%, 0 17%);
+  }
+}
+/* Trapezoid clip-path animation */
+@keyframes clipTrapezoidAnimation {
+  0% {
+    clip-path: polygon(75% 0%, 75% 0%, 75% 0%, 75% 0%, 75% 0%, 75% 0%);
+  }
+  20% {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 0%, 75% 0%, 75% 0%, 75% 0%);
+  }
+  40% {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 75% 0%, 75% 0%, 75% 0%);
+  }
+  60% {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 75% 0%, 75% 0%);
+  }
+  80% {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 75% 0%);
+  }
+  100% {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  }
+}
+
+.cards {
+  display: flex;
+  text-align: center;
+}
+
+.cards .card {
+  display: inline-block;
+  color: #a50044;
+  width: 30%;
+  margin: 16px;
+  box-shadow: 0 10px 5px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background-color: #ffa50044;
+  border: 1px solid #004d98;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card ol {
+  padding-left: 30px;
+}
+
+.card ol li {
+  width: 200px;
+  text-align: left;
+}
+
+.card ul {
+  padding-left: 30px;
+}
+
+.card ul li {
+  width: 210px;
+  text-align: left;
+}
+
+.cards .button {
+  display: inline-block;
+  padding: 3px 8px;
+  background-color: #a50044;
+  color: #ffd700;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: #004d98;
+  color: #ffd700;
+  padding: 12px 0;
+  text-align: center;
+}
+
+footer .footer-menu {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 16px;
+}
+
+footer .footer-menu ul {
+  list-style: none;
+}
+
+footer .footer-menu h4 {
+  margin-bottom: 8px;
+}
+
+footer .footer-menu a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+footer .footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  padding: 12px 0 0 10px;
+  margin: 10px;
+}
